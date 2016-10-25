@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		973EA3FC1DAFF58D005307E9 /* OMCAuthentication-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 973EA3FD1DAFF58D005307E9 /* Build configuration list for PBXAggregateTarget "OMCAuthentication-Universal" */;
+			buildPhases = (
+				973EA4001DAFF599005307E9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "OMCAuthentication-Universal";
+			productName = "Authentication-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		97175CF01DB82E0300D123AD /* OMCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97175CEF1DB82E0300D123AD /* OMCCore.framework */; };
+		971E56E81DAF140D00C70FED /* AuthenticationAdapter.swift in Headers */ = {isa = PBXBuildFile; fileRef = E757EEBE1D95A79700902568 /* AuthenticationAdapter.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56E91DAF143400C70FED /* UserPreferencesExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = E7F1951F1D908AA300C47F1E /* UserPreferencesExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56EA1DAF143600C70FED /* AuthUIProtocolExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = E757EE7D1D9358B800902568 /* AuthUIProtocolExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56EB1DAF143800C70FED /* EyeAuthEnrollmentIntro1ViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = E79747E11D8BFD380037F6FE /* EyeAuthEnrollmentIntro1ViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56EC1DAF143A00C70FED /* EyeAuthEnrollmentIntro2ViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = E79747E21D8BFD380037F6FE /* EyeAuthEnrollmentIntro2ViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56ED1DAF143B00C70FED /* EyeAuthViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = E79747E31D8BFD380037F6FE /* EyeAuthViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56EE1DAF143D00C70FED /* SignInViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = E79747E41D8BFD380037F6FE /* SignInViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56EF1DAF143E00C70FED /* TouchIDViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = E79747E51D8BFD380037F6FE /* TouchIDViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F01DAF144100C70FED /* EyeAuthProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E7F1950C1D9050F400C47F1E /* EyeAuthProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F11DAF144200C70FED /* AuthUIProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E79747B21D8B55B00037F6FE /* AuthUIProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F21DAF144400C70FED /* SignInAdapterProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E757EEB11D94BB1D00902568 /* SignInAdapterProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F31DAF144500C70FED /* TouchIdAdapterProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E757EEB41D94BB9300902568 /* TouchIdAdapterProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F41DAF144600C70FED /* EyePrintEnrollmentAdpaterProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E757EEB61D94BCD700902568 /* EyePrintEnrollmentAdpaterProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F51DAF144800C70FED /* EyeVerificationAdpaterProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E757EEB81D958E1C00902568 /* EyeVerificationAdpaterProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F61DAF144900C70FED /* SignOutAdapterProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = E757EEBA1D958F7B00902568 /* SignOutAdapterProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F71DAF144C00C70FED /* EyeAuthManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = E759322A1D90B5E200A17A96 /* EyeAuthManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F81DAF144E00C70FED /* AuthManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = E79747AB1D8B483D0037F6FE /* AuthManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56F91DAF145200C70FED /* PutLocaleService.swift in Headers */ = {isa = PBXBuildFile; fileRef = E759326B1D91F6E000A17A96 /* PutLocaleService.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56FA1DAF145400C70FED /* AuthService.swift in Headers */ = {isa = PBXBuildFile; fileRef = E7A685DC1D8A1EC700282460 /* AuthService.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		971E56FB1DAF145600C70FED /* GetAuthenticatedUserDetailsService.swift in Headers */ = {isa = PBXBuildFile; fileRef = E7A685DD1D8A1EC700282460 /* GetAuthenticatedUserDetailsService.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		973EA3F81DAFF525005307E9 /* AuthentiactionAsssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973EA3F71DAFF525005307E9 /* AuthentiactionAsssets.xcassets */; };
+		973EA3FB1DAFF545005307E9 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973EA3F91DAFF545005307E9 /* Authentication.storyboard */; };
+		978BFBE81DB044B200B0C4A2 /* drishti.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E7F195151D90680700C47F1E /* drishti.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		978BFBE91DB044B200B0C4A2 /* EyeVerify.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E7F195161D90680700C47F1E /* EyeVerify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		978BFBEB1DB046A200B0C4A2 /* EyeVerifyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F195171D90680700C47F1E /* EyeVerifyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		978BFBEC1DB046A900B0C4A2 /* EVLicense.h in Headers */ = {isa = PBXBuildFile; fileRef = E75932241D90B42200A17A96 /* EVLicense.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		978BFBED1DB046AD00B0C4A2 /* EVSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = E75932251D90B42200A17A96 /* EVSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		978BFBEE1DB046B000B0C4A2 /* EyeVerify.h in Headers */ = {isa = PBXBuildFile; fileRef = E75932261D90B42200A17A96 /* EyeVerify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E757EE7E1D9358B800902568 /* AuthUIProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757EE7D1D9358B800902568 /* AuthUIProtocolExtension.swift */; };
+		E757EEB21D94BB1D00902568 /* SignInAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757EEB11D94BB1D00902568 /* SignInAdapterProtocol.swift */; };
+		E757EEB51D94BB9300902568 /* TouchIdAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757EEB41D94BB9300902568 /* TouchIdAdapterProtocol.swift */; };
+		E757EEB71D94BCD700902568 /* EyePrintEnrollmentAdpaterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757EEB61D94BCD700902568 /* EyePrintEnrollmentAdpaterProtocol.swift */; };
+		E757EEB91D958E1C00902568 /* EyeVerificationAdpaterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757EEB81D958E1C00902568 /* EyeVerificationAdpaterProtocol.swift */; };
+		E757EEBB1D958F7B00902568 /* SignOutAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757EEBA1D958F7B00902568 /* SignOutAdapterProtocol.swift */; };
+		E757EEBF1D95A79700902568 /* AuthenticationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757EEBE1D95A79700902568 /* AuthenticationAdapter.swift */; };
+		E759322B1D90B5E200A17A96 /* EyeAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E759322A1D90B5E200A17A96 /* EyeAuthManager.swift */; };
+		E759326C1D91F6E000A17A96 /* PutLocaleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E759326B1D91F6E000A17A96 /* PutLocaleService.swift */; };
+		E79747AD1D8B483D0037F6FE /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79747AB1D8B483D0037F6FE /* AuthManager.swift */; };
+		E79747B31D8B55B00037F6FE /* AuthUIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79747B21D8B55B00037F6FE /* AuthUIProtocol.swift */; };
+		E79747E61D8BFD380037F6FE /* EyeAuthEnrollmentIntro1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79747E11D8BFD380037F6FE /* EyeAuthEnrollmentIntro1ViewController.swift */; };
+		E79747E71D8BFD380037F6FE /* EyeAuthEnrollmentIntro2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79747E21D8BFD380037F6FE /* EyeAuthEnrollmentIntro2ViewController.swift */; };
+		E79747E81D8BFD380037F6FE /* EyeAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79747E31D8BFD380037F6FE /* EyeAuthViewController.swift */; };
+		E79747E91D8BFD380037F6FE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79747E41D8BFD380037F6FE /* SignInViewController.swift */; };
+		E79747EA1D8BFD380037F6FE /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79747E51D8BFD380037F6FE /* TouchIDViewController.swift */; };
+		E7A685D01D8A1E5600282460 /* OMCAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A685CE1D8A1E5600282460 /* OMCAuthentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7A685DE1D8A1EC700282460 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A685DC1D8A1EC700282460 /* AuthService.swift */; };
+		E7A685DF1D8A1EC700282460 /* GetAuthenticatedUserDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A685DD1D8A1EC700282460 /* GetAuthenticatedUserDetailsService.swift */; };
+		E7F1950D1D9050F400C47F1E /* EyeAuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1950C1D9050F400C47F1E /* EyeAuthProtocol.swift */; };
+		E7F195191D90680700C47F1E /* drishti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F195151D90680700C47F1E /* drishti.framework */; };
+		E7F1951A1D90680700C47F1E /* EyeVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F195161D90680700C47F1E /* EyeVerify.framework */; };
+		E7F1951C1D90680700C47F1E /* EyeVerifyLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F195181D90680700C47F1E /* EyeVerifyLoader.m */; };
+		E7F195201D908AA300C47F1E /* UserPreferencesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1951F1D908AA300C47F1E /* UserPreferencesExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		978BFBE71DB044A700B0C4A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				978BFBE81DB044B200B0C4A2 /* drishti.framework in CopyFiles */,
+				978BFBE91DB044B200B0C4A2 /* EyeVerify.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		97175CEF1DB82E0300D123AD /* OMCCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMCCore.framework; sourceTree = "<group>"; };
+		973EA3F71DAFF525005307E9 /* AuthentiactionAsssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = AuthentiactionAsssets.xcassets; path = Authentication/Resources/AuthentiactionAsssets.xcassets; sourceTree = SOURCE_ROOT; };
+		973EA3FA1DAFF545005307E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Authentication/Resources/Base.lproj/Authentication.storyboard; sourceTree = SOURCE_ROOT; };
+		97FF1C3A1DB157AC00667504 /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HomeViewController-dyieeinwqjqhjodgvimbbfzcwlqu/Build/Products/Debug-iphoneos/Core.framework"; sourceTree = "<group>"; };
+		E757EE7D1D9358B800902568 /* AuthUIProtocolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthUIProtocolExtension.swift; sourceTree = "<group>"; };
+		E757EEB11D94BB1D00902568 /* SignInAdapterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInAdapterProtocol.swift; sourceTree = "<group>"; };
+		E757EEB41D94BB9300902568 /* TouchIdAdapterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIdAdapterProtocol.swift; sourceTree = "<group>"; };
+		E757EEB61D94BCD700902568 /* EyePrintEnrollmentAdpaterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyePrintEnrollmentAdpaterProtocol.swift; sourceTree = "<group>"; };
+		E757EEB81D958E1C00902568 /* EyeVerificationAdpaterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeVerificationAdpaterProtocol.swift; sourceTree = "<group>"; };
+		E757EEBA1D958F7B00902568 /* SignOutAdapterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutAdapterProtocol.swift; sourceTree = "<group>"; };
+		E757EEBE1D95A79700902568 /* AuthenticationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationAdapter.swift; sourceTree = "<group>"; };
+		E75932241D90B42200A17A96 /* EVLicense.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EVLicense.h; path = EyeVerify.framework/Headers/EVLicense.h; sourceTree = "<group>"; };
+		E75932251D90B42200A17A96 /* EVSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EVSettings.h; path = EyeVerify.framework/Headers/EVSettings.h; sourceTree = "<group>"; };
+		E75932261D90B42200A17A96 /* EyeVerify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EyeVerify.h; path = EyeVerify.framework/Headers/EyeVerify.h; sourceTree = "<group>"; };
+		E759322A1D90B5E200A17A96 /* EyeAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeAuthManager.swift; sourceTree = "<group>"; };
+		E759326B1D91F6E000A17A96 /* PutLocaleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutLocaleService.swift; sourceTree = "<group>"; };
+		E79747AB1D8B483D0037F6FE /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		E79747B21D8B55B00037F6FE /* AuthUIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthUIProtocol.swift; sourceTree = "<group>"; };
+		E79747E11D8BFD380037F6FE /* EyeAuthEnrollmentIntro1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeAuthEnrollmentIntro1ViewController.swift; sourceTree = "<group>"; };
+		E79747E21D8BFD380037F6FE /* EyeAuthEnrollmentIntro2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeAuthEnrollmentIntro2ViewController.swift; sourceTree = "<group>"; };
+		E79747E31D8BFD380037F6FE /* EyeAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeAuthViewController.swift; sourceTree = "<group>"; };
+		E79747E41D8BFD380037F6FE /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E79747E51D8BFD380037F6FE /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
+		E7A685CB1D8A1E5600282460 /* OMCAuthentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OMCAuthentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A685CE1D8A1E5600282460 /* OMCAuthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMCAuthentication.h; sourceTree = "<group>"; };
+		E7A685CF1D8A1E5600282460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A685DC1D8A1EC700282460 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E7A685DD1D8A1EC700282460 /* GetAuthenticatedUserDetailsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAuthenticatedUserDetailsService.swift; sourceTree = "<group>"; };
+		E7F1950C1D9050F400C47F1E /* EyeAuthProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeAuthProtocol.swift; sourceTree = "<group>"; };
+		E7F195151D90680700C47F1E /* drishti.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = drishti.framework; sourceTree = "<group>"; };
+		E7F195161D90680700C47F1E /* EyeVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EyeVerify.framework; sourceTree = "<group>"; };
+		E7F195171D90680700C47F1E /* EyeVerifyLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeVerifyLoader.h; sourceTree = "<group>"; };
+		E7F195181D90680700C47F1E /* EyeVerifyLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeVerifyLoader.m; sourceTree = "<group>"; };
+		E7F1951F1D908AA300C47F1E /* UserPreferencesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7A685C71D8A1E5600282460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F195191D90680700C47F1E /* drishti.framework in Frameworks */,
+				97175CF01DB82E0300D123AD /* OMCCore.framework in Frameworks */,
+				E7F1951A1D90680700C47F1E /* EyeVerify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E757EEBD1D95A76700902568 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				E757EEBE1D95A79700902568 /* AuthenticationAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		E759322C1D919A7200A17A96 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		E79747A71D8B45860037F6FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E79747AA1D8B483D0037F6FE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E759322A1D90B5E200A17A96 /* EyeAuthManager.swift */,
+				E79747AB1D8B483D0037F6FE /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E79747B11D8B55B00037F6FE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E7F1950C1D9050F400C47F1E /* EyeAuthProtocol.swift */,
+				E79747B21D8B55B00037F6FE /* AuthUIProtocol.swift */,
+				E757EEB11D94BB1D00902568 /* SignInAdapterProtocol.swift */,
+				E757EEB41D94BB9300902568 /* TouchIdAdapterProtocol.swift */,
+				E757EEB61D94BCD700902568 /* EyePrintEnrollmentAdpaterProtocol.swift */,
+				E757EEB81D958E1C00902568 /* EyeVerificationAdpaterProtocol.swift */,
+				E757EEBA1D958F7B00902568 /* SignOutAdapterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E79747DC1D8BFB220037F6FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				973EA3F91DAFF545005307E9 /* Authentication.storyboard */,
+				973EA3F71DAFF525005307E9 /* AuthentiactionAsssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E79747E01D8BFD380037F6FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E79747E11D8BFD380037F6FE /* EyeAuthEnrollmentIntro1ViewController.swift */,
+				E79747E21D8BFD380037F6FE /* EyeAuthEnrollmentIntro2ViewController.swift */,
+				E79747E31D8BFD380037F6FE /* EyeAuthViewController.swift */,
+				E79747E41D8BFD380037F6FE /* SignInViewController.swift */,
+				E79747E51D8BFD380037F6FE /* TouchIDViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E79747ED1D8CAF2C0037F6FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7F1951F1D908AA300C47F1E /* UserPreferencesExtension.swift */,
+				E757EE7D1D9358B800902568 /* AuthUIProtocolExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7A685C11D8A1E5600282460 = {
+			isa = PBXGroup;
+			children = (
+				E79747DC1D8BFB220037F6FE /* Resources */,
+				E7A685CD1D8A1E5600282460 /* Authentication */,
+				E7A685CC1D8A1E5600282460 /* Products */,
+				E7A685D61D8A1EB100282460 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E7A685CC1D8A1E5600282460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7A685CB1D8A1E5600282460 /* OMCAuthentication.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7A685CD1D8A1E5600282460 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E757EEBD1D95A76700902568 /* Adapters */,
+				E759322C1D919A7200A17A96 /* UIComponents */,
+				E7F195131D90680700C47F1E /* ExternalFrameworks */,
+				E79747ED1D8CAF2C0037F6FE /* Extensions */,
+				E79747E01D8BFD380037F6FE /* ViewControllers */,
+				E79747B11D8B55B00037F6FE /* Protocols */,
+				E79747AA1D8B483D0037F6FE /* Managers */,
+				E79747A71D8B45860037F6FE /* Models */,
+				E7A685DB1D8A1EC700282460 /* Services */,
+				E7A685CE1D8A1E5600282460 /* OMCAuthentication.h */,
+				E7A685CF1D8A1E5600282460 /* Info.plist */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E7A685D61D8A1EB100282460 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97FF1C3A1DB157AC00667504 /* Core.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7A685DB1D8A1EC700282460 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E759326B1D91F6E000A17A96 /* PutLocaleService.swift */,
+				E7A685DC1D8A1EC700282460 /* AuthService.swift */,
+				E7A685DD1D8A1EC700282460 /* GetAuthenticatedUserDetailsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E7F195131D90680700C47F1E /* ExternalFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97175CEF1DB82E0300D123AD /* OMCCore.framework */,
+				E7F195141D90680700C47F1E /* EyeVerify */,
+			);
+			path = ExternalFrameworks;
+			sourceTree = "<group>";
+		};
+		E7F195141D90680700C47F1E /* EyeVerify */ = {
+			isa = PBXGroup;
+			children = (
+				E7F195151D90680700C47F1E /* drishti.framework */,
+				E7F195161D90680700C47F1E /* EyeVerify.framework */,
+				E7F195171D90680700C47F1E /* EyeVerifyLoader.h */,
+				E7F195181D90680700C47F1E /* EyeVerifyLoader.m */,
+				E75932241D90B42200A17A96 /* EVLicense.h */,
+				E75932251D90B42200A17A96 /* EVSettings.h */,
+				E75932261D90B42200A17A96 /* EyeVerify.h */,
+			);
+			path = EyeVerify;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E7A685C81D8A1E5600282460 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971E56E81DAF140D00C70FED /* AuthenticationAdapter.swift in Headers */,
+				E7A685D01D8A1E5600282460 /* OMCAuthentication.h in Headers */,
+				971E56F11DAF144200C70FED /* AuthUIProtocol.swift in Headers */,
+				971E56F71DAF144C00C70FED /* EyeAuthManager.swift in Headers */,
+				971E56E91DAF143400C70FED /* UserPreferencesExtension.swift in Headers */,
+				971E56EB1DAF143800C70FED /* EyeAuthEnrollmentIntro1ViewController.swift in Headers */,
+				971E56F61DAF144900C70FED /* SignOutAdapterProtocol.swift in Headers */,
+				971E56FA1DAF145400C70FED /* AuthService.swift in Headers */,
+				971E56FB1DAF145600C70FED /* GetAuthenticatedUserDetailsService.swift in Headers */,
+				978BFBEE1DB046B000B0C4A2 /* EyeVerify.h in Headers */,
+				971E56F41DAF144600C70FED /* EyePrintEnrollmentAdpaterProtocol.swift in Headers */,
+				978BFBEB1DB046A200B0C4A2 /* EyeVerifyLoader.h in Headers */,
+				971E56F91DAF145200C70FED /* PutLocaleService.swift in Headers */,
+				971E56EE1DAF143D00C70FED /* SignInViewController.swift in Headers */,
+				971E56EA1DAF143600C70FED /* AuthUIProtocolExtension.swift in Headers */,
+				978BFBED1DB046AD00B0C4A2 /* EVSettings.h in Headers */,
+				971E56F01DAF144100C70FED /* EyeAuthProtocol.swift in Headers */,
+				971E56F51DAF144800C70FED /* EyeVerificationAdpaterProtocol.swift in Headers */,
+				971E56F81DAF144E00C70FED /* AuthManager.swift in Headers */,
+				971E56F31DAF144500C70FED /* TouchIdAdapterProtocol.swift in Headers */,
+				971E56F21DAF144400C70FED /* SignInAdapterProtocol.swift in Headers */,
+				971E56ED1DAF143B00C70FED /* EyeAuthViewController.swift in Headers */,
+				971E56EF1DAF143E00C70FED /* TouchIDViewController.swift in Headers */,
+				978BFBEC1DB046A900B0C4A2 /* EVLicense.h in Headers */,
+				971E56EC1DAF143A00C70FED /* EyeAuthEnrollmentIntro2ViewController.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E7A685CA1D8A1E5600282460 /* OMCAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A685D31D8A1E5600282460 /* Build configuration list for PBXNativeTarget "OMCAuthentication" */;
+			buildPhases = (
+				E7A685C61D8A1E5600282460 /* Sources */,
+				E7A685C71D8A1E5600282460 /* Frameworks */,
+				E7A685C81D8A1E5600282460 /* Headers */,
+				E7A685C91D8A1E5600282460 /* Resources */,
+				978BFBE71DB044A700B0C4A2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMCAuthentication;
+			productName = Authentication;
+			productReference = E7A685CB1D8A1E5600282460 /* OMCAuthentication.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7A685C21D8A1E5600282460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Visa Inc.";
+				TargetAttributes = {
+					973EA3FC1DAFF58D005307E9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7M8XGUGE24;
+						ProvisioningStyle = Automatic;
+					};
+					E7A685CA1D8A1E5600282460 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7M8XGUGE24;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E7A685C51D8A1E5600282460 /* Build configuration list for PBXProject "OMCAuthentication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7A685C11D8A1E5600282460;
+			productRefGroup = E7A685CC1D8A1E5600282460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7A685CA1D8A1E5600282460 /* OMCAuthentication */,
+				973EA3FC1DAFF58D005307E9 /* OMCAuthentication-Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7A685C91D8A1E5600282460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973EA3FB1DAFF545005307E9 /* Authentication.storyboard in Resources */,
+				973EA3F81DAFF525005307E9 /* AuthentiactionAsssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		973EA4001DAFF599005307E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -sdk iphoneos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n                                                                      cp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      ######################\n                                                                      # On Release, copy the result to release directory\n                                                                      ######################\n                                                                      OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n                                                                      \n                                                                      rm -rf \"$OUTPUT_DIR\"\n                                                                      mkdir -p \"$OUTPUT_DIR\"\n                                                                      \n                                                                      cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n                                                                      \n                                                                      if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n                                                                      open \"${OUTPUT_DIR}/\"\n                                                                      fi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7A685C61D8A1E5600282460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79747E61D8BFD380037F6FE /* EyeAuthEnrollmentIntro1ViewController.swift in Sources */,
+				E7F195201D908AA300C47F1E /* UserPreferencesExtension.swift in Sources */,
+				E79747E81D8BFD380037F6FE /* EyeAuthViewController.swift in Sources */,
+				E759322B1D90B5E200A17A96 /* EyeAuthManager.swift in Sources */,
+				E757EEBF1D95A79700902568 /* AuthenticationAdapter.swift in Sources */,
+				E7F1951C1D90680700C47F1E /* EyeVerifyLoader.m in Sources */,
+				E7A685DF1D8A1EC700282460 /* GetAuthenticatedUserDetailsService.swift in Sources */,
+				E757EEB51D94BB9300902568 /* TouchIdAdapterProtocol.swift in Sources */,
+				E757EE7E1D9358B800902568 /* AuthUIProtocolExtension.swift in Sources */,
+				E79747AD1D8B483D0037F6FE /* AuthManager.swift in Sources */,
+				E7F1950D1D9050F400C47F1E /* EyeAuthProtocol.swift in Sources */,
+				E79747E91D8BFD380037F6FE /* SignInViewController.swift in Sources */,
+				E759326C1D91F6E000A17A96 /* PutLocaleService.swift in Sources */,
+				E79747B31D8B55B00037F6FE /* AuthUIProtocol.swift in Sources */,
+				E79747E71D8BFD380037F6FE /* EyeAuthEnrollmentIntro2ViewController.swift in Sources */,
+				E757EEB21D94BB1D00902568 /* SignInAdapterProtocol.swift in Sources */,
+				E757EEB91D958E1C00902568 /* EyeVerificationAdpaterProtocol.swift in Sources */,
+				E757EEB71D94BCD700902568 /* EyePrintEnrollmentAdpaterProtocol.swift in Sources */,
+				E757EEBB1D958F7B00902568 /* SignOutAdapterProtocol.swift in Sources */,
+				E7A685DE1D8A1EC700282460 /* AuthService.swift in Sources */,
+				E79747EA1D8BFD380037F6FE /* TouchIDViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		973EA3F91DAFF545005307E9 /* Authentication.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				973EA3FA1DAFF545005307E9 /* Base */,
+			);
+			name = Authentication.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		973EA3FE1DAFF58D005307E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7M8XGUGE24;
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		973EA3FF1DAFF58D005307E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7M8XGUGE24;
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E7A685D11D8A1E5600282460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7A685D21D8A1E5600282460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E7A685D41D8A1E5600282460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7M8XGUGE24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Authentication/ExternalFrameworks/EyeVerify",
+					"$(PROJECT_DIR)/Authentication/ExternalFrameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Authentication/ExternalFrameworks/EyeVerify",
+					"$(PROJECT_DIR)/Authentication/Authentication/ExternalFrameworks/EyeVerify/EyeVerify.framework/Headers",
+				);
+				INFOPLIST_FILE = Authentication/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.onemarket.Authentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7A685D51D8A1E5600282460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7M8XGUGE24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Authentication/ExternalFrameworks/EyeVerify",
+					"$(PROJECT_DIR)/Authentication/ExternalFrameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Authentication/ExternalFrameworks/EyeVerify",
+					"$(PROJECT_DIR)/Authentication/Authentication/ExternalFrameworks/EyeVerify/EyeVerify.framework/Headers",
+				);
+				INFOPLIST_FILE = Authentication/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.onemarket.Authentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		973EA3FD1DAFF58D005307E9 /* Build configuration list for PBXAggregateTarget "OMCAuthentication-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973EA3FE1DAFF58D005307E9 /* Debug */,
+				973EA3FF1DAFF58D005307E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A685C51D8A1E5600282460 /* Build configuration list for PBXProject "OMCAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A685D11D8A1E5600282460 /* Debug */,
+				E7A685D21D8A1E5600282460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A685D31D8A1E5600282460 /* Build configuration list for PBXNativeTarget "OMCAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A685D41D8A1E5600282460 /* Debug */,
+				E7A685D51D8A1E5600282460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7A685C21D8A1E5600282460 /* Project object */;
+}

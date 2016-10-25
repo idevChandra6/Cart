@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GMa-JB-6BF" userLabel="View" customClass="CarousalView" customModule="Carousel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="450"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AccountTypeParent" translatesAutoresizingMaskIntoConstraints="NO" id="EET-8h-ea6" userLabel="ImageView"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubV-c4-3GP" userLabel="Title">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="Dkg-WF-ctX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to open a college savings plan account for my child" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnN-vB-iqZ" userLabel="Subtitle">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="9cW-xd-yc8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHE-Km-48H">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="OU5-8j-bCS"/>
+                    </constraints>
+                    <state key="normal" image="SelectButton"/>
+                    <state key="disabled" image="DisabledSelectButton"/>
+                    <connections>
+                        <action selector="selectButtonTouched" destination="GMa-JB-6BF" eventType="touchUpInside" id="LDR-X5-8S5"/>
+                    </connections>
+                </button>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nQ-hh-rGW">
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VMH-ZI-CTW">
+                        <frame key="frameInset"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oHE-Km-48H" secondAttribute="bottom" constant="9" id="3sY-tP-wtQ"/>
+                <constraint firstItem="oHE-Km-48H" firstAttribute="leading" secondItem="GMa-JB-6BF" secondAttribute="leading" constant="14" id="76P-Vb-N2e"/>
+                <constraint firstAttribute="trailing" secondItem="KnN-vB-iqZ" secondAttribute="trailing" constant="30" id="91H-Kq-PaG"/>
+                <constraint firstItem="oHE-Km-48H" firstAttribute="top" secondItem="KnN-vB-iqZ" secondAttribute="bottom" constant="30" id="9Tl-Qy-cli"/>
+                <constraint firstItem="oHE-Km-48H" firstAttribute="top" secondItem="KnN-vB-iqZ" secondAttribute="bottom" constant="5" id="ARt-j2-rsf"/>
+                <constraint firstItem="3nQ-hh-rGW" firstAttribute="leading" secondItem="GMa-JB-6BF" secondAttribute="leading" id="Dw3-SW-dK8"/>
+                <constraint firstItem="KnN-vB-iqZ" firstAttribute="leading" secondItem="GMa-JB-6BF" secondAttribute="leading" constant="30" id="F5v-ii-kCU"/>
+                <constraint firstItem="KnN-vB-iqZ" firstAttribute="centerX" secondItem="GMa-JB-6BF" secondAttribute="centerX" id="FTq-wb-XtP"/>
+                <constraint firstAttribute="bottom" secondItem="3nQ-hh-rGW" secondAttribute="bottom" id="NOh-W6-1NE"/>
+                <constraint firstAttribute="trailing" secondItem="EET-8h-ea6" secondAttribute="trailing" id="Owo-dH-F7o"/>
+                <constraint firstItem="EET-8h-ea6" firstAttribute="top" secondItem="GMa-JB-6BF" secondAttribute="top" id="U4Q-dI-ukk"/>
+                <constraint firstAttribute="bottom" secondItem="EET-8h-ea6" secondAttribute="bottom" id="UaI-FG-LCJ"/>
+                <constraint firstItem="KnN-vB-iqZ" firstAttribute="top" secondItem="ubV-c4-3GP" secondAttribute="bottom" constant="15" id="VR2-NW-HFa"/>
+                <constraint firstItem="oHE-Km-48H" firstAttribute="top" secondItem="KnN-vB-iqZ" secondAttribute="bottom" constant="15" id="Wcq-jJ-8QT"/>
+                <constraint firstItem="oHE-Km-48H" firstAttribute="top" secondItem="KnN-vB-iqZ" secondAttribute="bottom" constant="15" id="af1-2i-t0n"/>
+                <constraint firstAttribute="bottom" secondItem="KnN-vB-iqZ" secondAttribute="bottom" constant="15" id="byU-UF-WzB"/>
+                <constraint firstItem="ubV-c4-3GP" firstAttribute="top" secondItem="GMa-JB-6BF" secondAttribute="top" constant="25" id="fuO-U6-FV2"/>
+                <constraint firstItem="3nQ-hh-rGW" firstAttribute="top" secondItem="GMa-JB-6BF" secondAttribute="top" id="jLD-di-Duk"/>
+                <constraint firstItem="KnN-vB-iqZ" firstAttribute="top" secondItem="ubV-c4-3GP" secondAttribute="bottom" constant="5" id="jt9-Zo-ldh"/>
+                <constraint firstItem="ubV-c4-3GP" firstAttribute="centerX" secondItem="GMa-JB-6BF" secondAttribute="centerX" id="pIm-bA-0XM"/>
+                <constraint firstItem="EET-8h-ea6" firstAttribute="leading" secondItem="GMa-JB-6BF" secondAttribute="leading" id="r3I-tW-b2L"/>
+                <constraint firstAttribute="trailing" secondItem="oHE-Km-48H" secondAttribute="trailing" constant="14" id="uA7-hi-99U"/>
+                <constraint firstAttribute="trailing" secondItem="3nQ-hh-rGW" secondAttribute="trailing" id="yWH-v1-bZK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="VR2-NW-HFa"/>
+                    <exclude reference="byU-UF-WzB"/>
+                    <exclude reference="jt9-Zo-ldh"/>
+                    <exclude reference="9Tl-Qy-cli"/>
+                    <exclude reference="Wcq-jJ-8QT"/>
+                    <exclude reference="af1-2i-t0n"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="EET-8h-ea6" id="3fE-ck-AGB"/>
+                <outlet property="selectButton" destination="oHE-Km-48H" id="Biu-NG-VlV"/>
+                <outlet property="subtitleLabel" destination="KnN-vB-iqZ" id="1FC-pw-1Qk"/>
+                <outlet property="titleLabel" destination="ubV-c4-3GP" id="Tr9-c8-cu5"/>
+                <outlet property="visualEffectView" destination="3nQ-hh-rGW" id="J8W-sX-Qwg"/>
+            </connections>
+            <point key="canvasLocation" x="533" y="909"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AccountTypeParent" width="300" height="200"/>
+        <image name="DisabledSelectButton" width="271" height="40"/>
+        <image name="SelectButton" width="272" height="41"/>
+    </resources>
+</document>

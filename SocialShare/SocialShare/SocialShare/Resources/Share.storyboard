@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shared View Controller-->
+        <scene sceneID="SfA-9Q-8rq">
+            <objects>
+                <viewController storyboardIdentifier="SharedViewController" id="Q7G-Qg-8KY" customClass="SharedViewController" customModule="SocialShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iky-HV-LII"/>
+                        <viewControllerLayoutGuide type="bottom" id="qmb-7g-c7R"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="RB0-UW-KrK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sharingBGOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="2Gp-s7-33H">
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Bd2-sa-e7G" appends="YES" id="sxC-f2-ubn"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvW-LG-QPU">
+                                <state key="normal" image="shareFaceBook"/>
+                                <connections>
+                                    <action selector="shareToFacebookBtnTouched:" destination="Q7G-Qg-8KY" eventType="touchUpInside" id="ZpN-Xp-eIv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33e-qQ-qH0">
+                                <state key="normal" image="shareTwitter"/>
+                                <connections>
+                                    <action selector="shareToTwitterBtnTouched:" destination="Q7G-Qg-8KY" eventType="touchUpInside" id="de9-pk-NTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPw-AV-uPO">
+                                <state key="normal" image="shareMail"/>
+                                <connections>
+                                    <action selector="shareToEmailBtnTouched:" destination="Q7G-Qg-8KY" eventType="touchUpInside" id="XNj-3R-BpQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xe-ch-95e">
+                                <state key="normal" image="shareMessage"/>
+                                <connections>
+                                    <action selector="shareToMessageBtnTouched:" destination="Q7G-Qg-8KY" eventType="touchUpInside" id="GhW-f8-SUL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iei-6Y-XNK">
+                                <state key="normal" image="shareClose"/>
+                                <connections>
+                                    <action selector="closeBtnTouched:" destination="Q7G-Qg-8KY" eventType="touchUpInside" id="6Xg-uZ-5TA"/>
+                                    <action selector="shareToDownloadBtnTouched:" destination="Q7G-Qg-8KY" eventType="touchUpInside" id="yFz-MN-0Xq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjH-vw-Hcu">
+                                <state key="normal" image="shareDownload"/>
+                                <connections>
+                                    <action selector="shareToDownloadBtnTouched:" destination="Q7G-Qg-8KY" eventType="touchUpInside" id="opb-7y-v8n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SjH-vw-Hcu" firstAttribute="centerY" secondItem="RB0-UW-KrK" secondAttribute="centerY" id="2ZL-FR-Teu"/>
+                            <constraint firstItem="2xe-ch-95e" firstAttribute="leading" secondItem="zPw-AV-uPO" secondAttribute="trailing" constant="54" id="2gE-ht-Es4">
+                                <variation key="heightClass=compact-widthClass=compact" constant="26"/>
+                            </constraint>
+                            <constraint firstItem="2Gp-s7-33H" firstAttribute="top" secondItem="Iky-HV-LII" secondAttribute="bottom" constant="-20" id="4Ag-eY-goJ"/>
+                            <constraint firstItem="iei-6Y-XNK" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="centerX" id="4FA-is-7yC"/>
+                            <constraint firstItem="2xe-ch-95e" firstAttribute="top" secondItem="zPw-AV-uPO" secondAttribute="bottom" constant="13" id="5FD-U0-5rq"/>
+                            <constraint firstItem="iei-6Y-XNK" firstAttribute="top" secondItem="SjH-vw-Hcu" secondAttribute="bottom" constant="63" id="6RS-gd-02I"/>
+                            <constraint firstItem="qmb-7g-c7R" firstAttribute="top" secondItem="2Gp-s7-33H" secondAttribute="bottom" id="6oD-Ds-wVE"/>
+                            <constraint firstItem="zPw-AV-uPO" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="centerX" id="7FY-ww-Mil"/>
+                            <constraint firstItem="SjH-vw-Hcu" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="centerX" id="7Ug-Rb-5eI"/>
+                            <constraint firstItem="BvW-LG-QPU" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="centerX" id="95I-fM-gON"/>
+                            <constraint firstItem="BvW-LG-QPU" firstAttribute="top" secondItem="33e-qQ-qH0" secondAttribute="top" id="C87-oh-7f5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Gp-s7-33H" secondAttribute="trailing" constant="-20" id="DSe-40-yCh"/>
+                            <constraint firstItem="33e-qQ-qH0" firstAttribute="top" secondItem="BvW-LG-QPU" secondAttribute="bottom" constant="13" id="DZ5-BO-FB6">
+                                <variation key="heightClass=compact-widthClass=compact" constant="27"/>
+                            </constraint>
+                            <constraint firstItem="33e-qQ-qH0" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="centerX" id="FPC-v0-oPG"/>
+                            <constraint firstItem="33e-qQ-qH0" firstAttribute="centerY" secondItem="RB0-UW-KrK" secondAttribute="centerY" id="Hfz-kD-1iJ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-94.5"/>
+                            </constraint>
+                            <constraint firstItem="SjH-vw-Hcu" firstAttribute="top" secondItem="zPw-AV-uPO" secondAttribute="bottom" constant="39" id="Mae-2i-Aq4"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="2xe-ch-95e" secondAttribute="trailing" constant="13" id="RCU-Rx-M6T"/>
+                            <constraint firstItem="BvW-LG-QPU" firstAttribute="top" secondItem="2xe-ch-95e" secondAttribute="bottom" constant="15" id="TEP-yk-3ON"/>
+                            <constraint firstItem="33e-qQ-qH0" firstAttribute="top" secondItem="BvW-LG-QPU" secondAttribute="bottom" constant="39" id="Tsw-Zq-9d5"/>
+                            <constraint firstItem="SjH-vw-Hcu" firstAttribute="leading" secondItem="33e-qQ-qH0" secondAttribute="trailing" constant="46" id="ZoY-Sn-zX5"/>
+                            <constraint firstItem="SjH-vw-Hcu" firstAttribute="top" secondItem="33e-qQ-qH0" secondAttribute="bottom" constant="13" id="brg-IO-zra">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-55"/>
+                            </constraint>
+                            <constraint firstItem="SjH-vw-Hcu" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="centerX" id="dwM-Hn-9Jl"/>
+                            <constraint firstItem="zPw-AV-uPO" firstAttribute="top" secondItem="2xe-ch-95e" secondAttribute="top" id="eeN-He-7Wc"/>
+                            <constraint firstItem="33e-qQ-qH0" firstAttribute="top" secondItem="2xe-ch-95e" secondAttribute="bottom" constant="39" id="hB4-Qz-DT1"/>
+                            <constraint firstItem="iei-6Y-XNK" firstAttribute="top" secondItem="SjH-vw-Hcu" secondAttribute="bottom" constant="56" id="ibb-zf-Yqj">
+                                <variation key="heightClass=compact-widthClass=compact" constant="75"/>
+                            </constraint>
+                            <constraint firstItem="2xe-ch-95e" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="centerX" id="kcb-hB-EzM"/>
+                            <constraint firstItem="2xe-ch-95e" firstAttribute="top" secondItem="BvW-LG-QPU" secondAttribute="top" id="kh8-pb-gdq"/>
+                            <constraint firstItem="33e-qQ-qH0" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="leadingMargin" constant="130" id="lLL-sT-neg"/>
+                            <constraint firstItem="BvW-LG-QPU" firstAttribute="leading" secondItem="RB0-UW-KrK" secondAttribute="centerXWithinMargins" constant="13" id="n4U-Ok-e6X"/>
+                            <constraint firstItem="2Gp-s7-33H" firstAttribute="leading" secondItem="RB0-UW-KrK" secondAttribute="leadingMargin" constant="-20" id="qr2-XS-Dow"/>
+                            <constraint firstItem="iei-6Y-XNK" firstAttribute="centerX" secondItem="RB0-UW-KrK" secondAttribute="centerX" id="rhH-xb-LFC"/>
+                            <constraint firstItem="33e-qQ-qH0" firstAttribute="leading" secondItem="BvW-LG-QPU" secondAttribute="trailing" constant="26" id="wxp-bS-u9e"/>
+                            <constraint firstItem="BvW-LG-QPU" firstAttribute="centerY" secondItem="RB0-UW-KrK" secondAttribute="centerY" constant="-58.5" id="xCX-SL-Gnm"/>
+                            <constraint firstItem="33e-qQ-qH0" firstAttribute="top" secondItem="zPw-AV-uPO" secondAttribute="bottom" constant="39" id="zWN-al-ePr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2gE-ht-Es4"/>
+                                <exclude reference="RCU-Rx-M6T"/>
+                                <exclude reference="kh8-pb-gdq"/>
+                                <exclude reference="Hfz-kD-1iJ"/>
+                                <exclude reference="Tsw-Zq-9d5"/>
+                                <exclude reference="hB4-Qz-DT1"/>
+                                <exclude reference="lLL-sT-neg"/>
+                                <exclude reference="wxp-bS-u9e"/>
+                                <exclude reference="zWN-al-ePr"/>
+                                <exclude reference="C87-oh-7f5"/>
+                                <exclude reference="n4U-Ok-e6X"/>
+                                <exclude reference="2ZL-FR-Teu"/>
+                                <exclude reference="Mae-2i-Aq4"/>
+                                <exclude reference="ZoY-Sn-zX5"/>
+                                <exclude reference="dwM-Hn-9Jl"/>
+                                <exclude reference="6RS-gd-02I"/>
+                                <exclude reference="rhH-xb-LFC"/>
+                                <exclude reference="eeN-He-7Wc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="2gE-ht-Es4"/>
+                                <exclude reference="5FD-U0-5rq"/>
+                                <include reference="RCU-Rx-M6T"/>
+                                <exclude reference="kcb-hB-EzM"/>
+                                <include reference="kh8-pb-gdq"/>
+                                <exclude reference="DZ5-BO-FB6"/>
+                                <exclude reference="FPC-v0-oPG"/>
+                                <include reference="Hfz-kD-1iJ"/>
+                                <include reference="wxp-bS-u9e"/>
+                                <exclude reference="95I-fM-gON"/>
+                                <include reference="C87-oh-7f5"/>
+                                <exclude reference="TEP-yk-3ON"/>
+                                <include reference="n4U-Ok-e6X"/>
+                                <exclude reference="xCX-SL-Gnm"/>
+                                <include reference="2ZL-FR-Teu"/>
+                                <exclude reference="7Ug-Rb-5eI"/>
+                                <include reference="Mae-2i-Aq4"/>
+                                <exclude reference="brg-IO-zra"/>
+                                <include reference="dwM-Hn-9Jl"/>
+                                <exclude reference="4FA-is-7yC"/>
+                                <include reference="6RS-gd-02I"/>
+                                <exclude reference="ibb-zf-Yqj"/>
+                                <include reference="rhH-xb-LFC"/>
+                                <exclude reference="7FY-ww-Mil"/>
+                                <include reference="eeN-He-7Wc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="d5f-QD-JVF"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="closeBtn" destination="iei-6Y-XNK" id="7L6-Vf-GAv"/>
+                        <outlet property="downloadBtn" destination="SjH-vw-Hcu" id="Gfo-Vo-Ao1"/>
+                        <outlet property="shareToEmailBtn" destination="zPw-AV-uPO" id="4MB-pv-Tav"/>
+                        <outlet property="shareToFacebookBtn" destination="BvW-LG-QPU" id="LzW-Zz-WQp"/>
+                        <outlet property="shareToMessageBtn" destination="2xe-ch-95e" id="iOn-A7-6TL"/>
+                        <outlet property="shareToTwitterBtn" destination="33e-qQ-qH0" id="XLi-nF-0UF"/>
+                        <outlet property="tapGesture" destination="Bd2-sa-e7G" id="YeG-b1-Nzt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSX-b8-kiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Bd2-sa-e7G">
+                    <connections>
+                        <action selector="tapGesture:" destination="Q7G-Qg-8KY" id="87l-Wf-8wz"/>
+                        <outlet property="delegate" destination="2Gp-s7-33H" id="PVr-FW-cJ4"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="879.20000000000005" y="-32.833583208395808"/>
+        </scene>
+        <!--Share Navigation Controller-->
+        <scene sceneID="zWa-nm-qSK">
+            <objects>
+                <navigationController storyboardIdentifier="ShareNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="WXG-10-zL9" customClass="ShareNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TJ5-um-fBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Q7G-Qg-8KY" kind="relationship" relationship="rootViewController" id="0dG-78-8Ee"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39n-2D-nWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="-32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shareClose" width="55" height="55"/>
+        <image name="shareDownload" width="55" height="55"/>
+        <image name="shareFaceBook" width="55" height="55"/>
+        <image name="shareMail" width="55" height="55"/>
+        <image name="shareMessage" width="55" height="55"/>
+        <image name="shareTwitter" width="55" height="55"/>
+        <image name="sharingBGOverlay" width="320" height="568"/>
+    </resources>
+</document>

@@ -1,0 +1,10 @@
+framework module OMCAuthentication {
+  umbrella header "OMCAuthentication.h"
+
+  export *
+  module * { export * }
+}
+
+module OMCAuthentication.Swift {
+    header "OMCAuthentication-Swift.h"
+}

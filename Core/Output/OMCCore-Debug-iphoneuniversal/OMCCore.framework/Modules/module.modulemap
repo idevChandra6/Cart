@@ -1,0 +1,10 @@
+framework module OMCCore {
+  umbrella header "OMCCore.h"
+
+  export *
+  module * { export * }
+}
+
+module OMCCore.Swift {
+    header "OMCCore-Swift.h"
+}
